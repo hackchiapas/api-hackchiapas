@@ -9,7 +9,7 @@ class HackersController extends Controller
 {
     public function select() 
     {
-    	$hackers = Hacker::all();
+      $hackers = Hacker::all();
     	return view('home', compact("hackers"));
     }
 
