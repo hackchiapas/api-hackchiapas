@@ -20,4 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/name/get', 'ForgotNameController@showPageForgotName')->name('name.request');
-Route::post('/name/get', 'ForgotNameController@showPageForgotName')->name('name.email');
+Route::post('/name/get', 'ForgotNameController@sendEmail')->name('name.email');
