@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Get user name</div>
+                <div class="panel-heading">Get Name</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -34,7 +34,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Send Name Get Link
+                                    Send mail
                                 </button>
                             </div>
                         </div>
