@@ -29,6 +29,6 @@ class TestEmail extends Mailable
                     ->bcc($address, $name)
                     ->replyTo($address, $name)
                     ->subject($subject)
-                    ->with("Hola mundo");
+                    ->with([ 'mensaje' => $this->data['userName'] ]);
     }
 }

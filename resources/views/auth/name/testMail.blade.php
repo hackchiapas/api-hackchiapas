@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+
 </head>
 <body>
-	<h1>Que hay gente?<h1>
-	<h2>Probando<h2>
+	<h1>Mensaje: </h1>
+	<h2>{{$mensaje}}</h2>
 </body>
 </html>
