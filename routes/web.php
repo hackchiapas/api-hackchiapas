@@ -19,6 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/administradores', 'AdminController@showLoginForm');
-Route::post('/administradores', 'AdminController@login')->name('loginAdmin');
-Route::get('/administradores/home', 'AdminController@secret');
+Route::get('/name/get', 'ForgotNameController@showPageForgotName')->name('name.request');
+Route::post('/name/get', 'ForgotNameController@showPageForgotName')->name('name.email');
