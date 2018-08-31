@@ -15,18 +15,18 @@ class CreateHackersTable extends Migration
     {
         Schema::create('hackers', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre');
-            $table->string('apellido_paterno');
-            $table->string('apellido_materno');
+            $table->string('nombre',100);
+            $table->string('apellido_paterno',50);
+            $table->string('apellido_materno',50);
+            $table->string('genero',10);
             $table->integer('edad');
-            $table->string('email')->unique();
-            $table->string('password');
-            $table->string('telefono');
+            $table->string('email');
+            $table->string('telefono',20);
             $table->string('instituto');
-            $table->string('estado');
-            $table->string('ciudad');
-            $table->string('talla_playera');
-            $table->string('token');
+            $table->string('estado',50);
+            $table->string('ciudad',100);
+            $table->string('talla_playera',20);
+            $table->string('codigo_confirmacion');
             $table->boolean('confirmado');
             $table->timestamps();
         });
