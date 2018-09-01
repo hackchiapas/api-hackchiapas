@@ -9,6 +9,7 @@ class Hacker extends Model
     protected $fillable = 
     [
         'nombre', 
-        'email'
+        'email' ,
+        'confirmado'
     ];
 }
