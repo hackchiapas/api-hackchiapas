@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Get Name</div>
+                <div class="panel-heading">Obtener nombre de usuario</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -23,7 +23,7 @@
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
-                                @if ($errors->has('email'))
+                                @if ($errors->any())
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
@@ -34,7 +34,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Send mail
+                                    Enviar mensaje
                                 </button>
                             </div>
                         </div>

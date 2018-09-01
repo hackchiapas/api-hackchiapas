@@ -4,7 +4,7 @@
 
 </head>
 <body>
-	<h1>Mensaje: </h1>
-	<h2>{{$mensaje}}</h2>
+	<h1>Hackers Chiapas</h1>
+	<h2>Tu nombre de usuario es: {{$mensaje}}</h2>
 </body>
 </html>
