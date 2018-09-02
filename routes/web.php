@@ -20,4 +20,5 @@ Auth::routes();
 Route::get('/name/get', 'ForgotNameController@showPageForgotName')->name('name.request');
 Route::post('/name/get', 'ForgotNameController@sendEmail')->name('name.email');
 
-Route::get('/home', 'HackersController@select');
+Route::get('/home', 'TableHackersController@index');
+Route::get('/home/Hackers', 'TableHackersController@getHackers')->name('home.search');
